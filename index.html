@@ -6,43 +6,43 @@
 
     <body>
         
-        <table class="calculadora">
-    
-            <tr>
-                <td colspan="4"><span id="resultado"></span></td>
-            </tr>
-
-            <tr>
-                <td><button id="blanco"></button></td>
-                <td><button id="ocho">C</button></td>
-                <td><button id="regresar"> RE </button></td>
-                <td><button id="division">/</button></td>
-            </tr>
-
-            <tr>
-                <td><button id="siete">7</button></td>
-                <td><button id="ocho">8</button></td>
-                <td><button id="nueve">9</button></td>
-                <td><button id="division">/</button></td>
-            </tr>
-
-            <tr>
-                <td><button id="cuatro">4</button></td>
-                <td><button id="cinco">5</button></td>
-                <td><button id="seis">6</button></td>
-                <td><button id="multiplicacion">x</button></td>
-
-            <tr>
-                <td><button id="uno">1</button></td>
-                <td><button id="dos">2</button></td>
-                <td><button id="tres">3</button></td>
-                <td><button id="menos">-</button></td>
-            </tr>
-
-            </tr>
-
-
-        </table>
+        <form name="f1"><br>
+            <input type="text" name="txtcaja1">
+            <br>
+            <input type="text" name="txtcaja2" value="0">
+            <br>
+            <input type="button" class="arit" onClick="arit('%')" value="%">
+            <input type="button" onClick="raiz()" value="√">
+            <input type="button" onClick="escribir('7')" value="x²">
+            <input type="button" onClick="escribir('7')" value="¹/×">
+            <br>
+            <input type="button" class="clear" onClick="document.f1.txtcaja2.value='0'" value="CE">
+            <input type="button" class="clear" onClick="document.f1.reset(); blocdel = false;" value="C">
+            <input type="button" class="clear" onClick="deletecarac()" value="◄">
+             
+            <input type="button" class="arit" onClick="arit('/')" value="÷">
+            <br>
+            <input type="button" onclick="escribir(this.value)" value="7">
+            <input type="button" onclick="escribir(this.value)" value="8">
+            <input type="button" onclick="escribir(this.value)" value="9">
+            <input type="button" class="arit" onClick="arit('*')" value="×">
+            <br>
+            <input type="button" onclick="escribir(this.value)" value="4">
+            <input type="button" onclick="escribir(this.value)" value="5">
+            <input type="button" onclick="escribir(this.value)" value="6">
+            <input type="button" class="arit" onClick="arit('-')" value="-">
+            <br>
+            <input type="button" onclick="escribir(this.value)" value="1">
+            <input type="button" onclick="escribir(this.value)" value="2">
+            <input type="button" onclick="escribir(this.value)" value="3">
+            <input type="button" class="arit" onClick="arit('+')" value="+">
+            <br>
+            <input type="button" class="arit" onClick="masmenos()" value="±">
+            <input type="button" onclick="escribir(this.value)" value="0">
+            <input type="button" onClick="escribir('.')" value=".">
+            <input type="button" class="igual" onClick="calcular()" value="=">
+            <br>
+            </form>
 
 
     </body>
